@@ -25,9 +25,9 @@ def house():
     aw = input("Is there an attic window (y/n): " )
     if aw == "y":
       radius = int(input("Radius: "))
-      ah = (length / 2) * (3 ** (1 / 2))
-      center = ah / 2
-      ctw = center - radius
+      #Height = hypotenuse/2*root3
+      #1/2 height = hyp/4*root3
+      center = (length / 4) * (3 ** .5)
       wc = input("Circle Window Color: ")
     h.down()
     h.fillcolor(hc)
@@ -87,7 +87,8 @@ def house():
       h.backward(dw/2)
       h.left(90)
       h.forward(height)
-      h.forward(ctw)
+      h.forward(center)
+      h.backward(radius)
       h.right(90)
       h.down()
       h.fillcolor(wc)
