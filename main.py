@@ -1,10 +1,5 @@
 import turtle
 h = turtle.Turtle()
-h.up()
-h.backward(245)
-h.right(90)
-h.forward(100)
-h.left(90)
 def house():
   number = int(input("# of Houses: "))
   i = 0
@@ -27,7 +22,7 @@ def house():
       radius = int(input("Radius: "))
       #Height = hypotenuse/2*root3
       #1/2 height = hyp/4*root3
-      center = (length / 4) * (3 ** .5)
+      center = (length / 6) * (3 ** .5)
       wc = input("Circle Window Color: ")
     h.down()
     h.fillcolor(hc)
