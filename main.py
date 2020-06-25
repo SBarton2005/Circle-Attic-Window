@@ -1,8 +1,5 @@
 import turtle
 h = turtle.Turtle()
-h.circle(10)
-h.circle(20)
-h.circle(30)
 h.up()
 h.backward(245)
 h.right(90)
